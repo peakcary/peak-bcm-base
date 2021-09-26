@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.less';
 
 type TProps = {
   ptype?: string;
@@ -11,7 +12,7 @@ export const BcmProps: React.FC<TProps> = props => {
   const { ptype, initialValue, readonly, onConfirm } = props;
 
   return (
-    <div>
+    <div className="c">
       hello,{ptype},{initialValue},{readonly}
     </div>
   );
