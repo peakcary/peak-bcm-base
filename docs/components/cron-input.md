@@ -9,7 +9,7 @@ Demo:
 ```tsx
 import React from 'react';
 
-import { CronInput } from 'ii-admin-base';
+import { CronInput } from 'peak-bcm-base';
 
 export default () => {
   const inputStyle = {

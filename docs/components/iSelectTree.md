@@ -8,7 +8,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { ISelectTree } from 'ii-admin-base';
+import { ISelectTree } from 'peak-bcm-base';
 
 const treeData = [
   {

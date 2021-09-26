@@ -22,6 +22,7 @@ export default {
         'components/iupload',
         'components/searchTree',
         'components/iSelectTree',
+        'components/bcm-props',
       ],
     },
   ],

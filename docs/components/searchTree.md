@@ -8,7 +8,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { SearchTree } from 'ii-admin-base';
+import { SearchTree } from 'peak-bcm-base';
 import { CarryOutOutlined, PlayCircleFilled } from '@ant-design/icons';
 
 const treeData = [

@@ -3,14 +3,14 @@ import { defineConfig } from 'dumi';
 import menus from './config/menus.js';
 
 export default defineConfig({
-  title: 'ii-admin-base',
+  title: 'peak-bcm-base',
   favicon:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
   logo:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
   outputPath: 'docs-dist',
-  publicPath: '/ii-admin-base/',
-  base: '/ii-admin-base',
+  publicPath: '/peak-bcm-base/',
+  base: '/peak-bcm-base',
   history: { type: 'hash' },
   mode: 'site',
   menus,

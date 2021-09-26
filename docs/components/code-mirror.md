@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 require('codemirror/mode/sql/sql.js');
 
 import { Button } from 'antd';
-import { CodeMirror } from 'ii-admin-base';
+import { CodeMirror } from 'peak-bcm-base';
 
 export default () => {
   const [instance, setInstance] = useState({});

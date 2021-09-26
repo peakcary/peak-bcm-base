@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 require('codemirror/mode/sql/sql.js');
 
 import { Button } from 'antd';
-import { PolylineDynamic } from 'ii-admin-base';
+import { PolylineDynamic } from 'peak-bcm-base';
 
 export default () => {
   const [clearSvg, setClearSvg] = useState(false);

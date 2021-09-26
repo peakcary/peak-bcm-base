@@ -8,7 +8,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { HighlightCard } from 'ii-admin-base';
+import { HighlightCard } from 'peak-bcm-base';
 
 export default () => <HighlightCard cardTitle="高亮标题" />;
 ```

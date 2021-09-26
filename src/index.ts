@@ -8,3 +8,4 @@ export { default as CodeMirror } from './code-mirror';
 export { default as CronInput } from './cron-input';
 export { default as PolylineDynamic } from './polyline-dynamic';
 // export { default as ImageCarousel } from './ImageCarousel';
+export { default as BcmProps } from './bcm-props';

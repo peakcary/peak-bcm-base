@@ -8,7 +8,7 @@ Demo:
 
 ```tsx
 import React, { useState } from 'react';
-import { ImageCarousel } from 'ii-admin-base';
+import { ImageCarousel } from 'peak-bcm-base';
 
 export default () => {
   const carouselImages = [

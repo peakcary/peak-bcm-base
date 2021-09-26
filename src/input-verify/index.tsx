@@ -25,7 +25,7 @@ export interface InputVerifyProps extends InputProps {
  * ### 如何引用
  *
  * ~~~javascript
- * import { InputVerify } from 'ii-admin-base'
+ * import { InputVerify } from 'peak-bcm-base'
  * ~~~
  */
 export const InputVerify: FC<InputVerifyProps> = props => {
