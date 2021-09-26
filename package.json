@@ -1,6 +1,6 @@
 {
-  "name": "ii-admin-base",
-  "version": "1.4.1",
+  "name": "peak-bcm-base",
+  "version": "1.0.0",
   "private": false,
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -24,10 +24,10 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "homepage": "https://lagrangelabs.github.io/ii-admin-base",
+  "homepage": "https://github.com/peakcary/peak-bcm-base",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LagrangeLabs/ii-admin-base.git"
+    "url": "https://github.com/peakcary/peak-bcm-base.git"
   },
   "files": [
     "dist",
