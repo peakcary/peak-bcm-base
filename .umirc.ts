@@ -12,4 +12,11 @@ export default defineConfig({
   menus,
   styles: ['https://cdn.bootcdn.net/ajax/libs/antd/4.7.0/antd.min.css'],
   // more config: https://d.umijs.org/config
+  proxy: {
+    '/api': {
+      target: 'http://10.120.59.28:8107',
+      // pathRewrite: { '^/api': '' },
+      changeOrigin: true,
+    },
+  },
 });

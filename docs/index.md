@@ -37,7 +37,3 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 打包构建。
 
 > yarn build
-
-## 三、更多资料
-
-- [如何搭建团队 UI 组件库](https://www.yuque.com/qg0ivw/ky9k8b/rn9whn)
