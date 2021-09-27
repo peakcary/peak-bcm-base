@@ -1,6 +1,6 @@
 # peak-bcm-base
 
-peak-bcm-base(中后台基础组件库)，主要存放各个业务线都可复用的基础组件，[预览地址](https://lagrangelabs.github.io/peak-bcm-base/)。
+peak-bcm-base(中后台基础组件库)，主要存放各个业务线都可复用的基础组件。
 
 ## 一、如何引用
 
@@ -16,5 +16,4 @@ import { InputVerfiy } from 'peak-bcm-base'
 
 **注：**
 
-- [开发文档](https://github.com/LagrangeLabs/peak-bcm-base/blob/master/docs/index.md)
 - 第三方依赖若不需要重复安装，可以选择安装在 devDependencies，还需放到 peerDependencies 中，否则对于 cmj 输出的包，module 编译会报错

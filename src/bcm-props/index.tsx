@@ -12,7 +12,7 @@ export const BcmProps: React.FC<TProps> = props => {
   const { ptype, initialValue, readonly, onConfirm } = props;
 
   return (
-    <div className="c">
+    <div className="container">
       hello,{ptype},{initialValue},{readonly}
     </div>
   );
