@@ -46,9 +46,6 @@ export const BcmProps: React.FC<TProps> = props => {
         placeholder="请选择"
         optionFilterProp="children"
         onChange={onChange}
-        filterOption={(input, option) =>
-          option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-        }
       >
         <Option value="1">1</Option>
         <Option value="2">2</Option>
