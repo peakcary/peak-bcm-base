@@ -16,7 +16,8 @@ export const BcmProps: React.FC<TProps> = props => {
   const { ptype, initialValue, readonly, onConfirm, onCancel } = props;
   const [data, setData] = useState([]);
   const [dataC, setDataC] = useState([]);
-  const [selectValue, setSelectValue] = useState('');
+  // const [selectValue, setSelectValue] = useState('');
+  let selectedValue: string = initialValue;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,11 +40,24 @@ export const BcmProps: React.FC<TProps> = props => {
   };
 
   const onHandleConfirm = () => {
-    onConfirm(selectValue);
+    console.log(selectedValue);
+    onConfirm(selectedValue);
   };
 
-  const onChange = (v: string) => {
-    console.log(v);
+  const onChange = (value: string) => {
+    console.log(value);
+    let selectedValue = '';
+    const { ptype } = props;
+    if (ptype === 'user') {
+      selectedValue = '${user.' + value + '}';
+    }
+    if (ptype === 'event') {
+      selectedValue = '${event.' + value + '}';
+    }
+    if (ptype === 'product') {
+      selectedValue = '${item.' + value + '}';
+    }
+    selectedValue = selectedValue;
   };
 
   const onChangeC = (value: string) => {
@@ -56,7 +70,8 @@ export const BcmProps: React.FC<TProps> = props => {
     if (ptype === 'product') {
       selectedValue = '${item.' + value + '}';
     }
-    setSelectValue(selectedValue);
+    selectedValue = selectedValue;
+    // setSelectValue(selectedValue);
   };
 
   let title: string = '';
