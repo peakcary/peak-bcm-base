@@ -1,4 +1,4 @@
-import 'default-passive-events';
+// import 'default-passive-events';
 
 export { default as HighlightCard } from './highlight-card';
 export { default as InputVerify } from './input-verify';

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 import { Button, Select, Card } from 'antd';
 import './index.css';
@@ -16,12 +15,17 @@ export const BcmProps: React.FC<TProps> = props => {
   const { ptype, initialValue, readonly, onConfirm, onCancel } = props;
   const [data, setData] = useState([]);
   const [dataC, setDataC] = useState([]);
-  // const [selectValue, setSelectValue] = useState('');
   let selectedValue: string = initialValue;
 
   useEffect(() => {
     const fetchData = async () => {
       let url = '/api/property/user/properties';
+      if (ptype === 'event') {
+        url = `/api/v2/sf/events/all?project=default&cache=false&invisible=false&check_permission=false`;
+      }
+      if (ptype === 'product') {
+        url = `/api/v2/sf/items/type?project=default&cache=false&invisible=false&check_permission=false`;
+      }
       axios
         .get(url, {
           params: {},
@@ -40,6 +44,7 @@ export const BcmProps: React.FC<TProps> = props => {
   };
 
   const onHandleConfirm = () => {
+    console.log(selectedValue);
     onConfirm(selectedValue);
   };
 
@@ -49,10 +54,29 @@ export const BcmProps: React.FC<TProps> = props => {
       selectedValue = '${user.' + value + '}';
     }
     if (ptype === 'event') {
-      selectedValue = '${event.' + value + '}';
+      let url = '/api/event/properties?events=' + value;
+      axios
+        .get(url, {
+          params: {},
+          headers: { token: '$6666ebc5599b852f3a8f81c1fdcd3575' },
+        })
+        .then(d => {
+          console.log('ddd:', d.data[value].event);
+          setDataC(d.data[value].event);
+        });
     }
     if (ptype === 'product') {
-      selectedValue = '${item.' + value + '}';
+      let url =
+        '/api/v2/sf/items/properties?project=default&item_type=' + value;
+      axios
+        .get(url, {
+          params: {},
+          headers: { token: '$6666ebc5599b852f3a8f81c1fdcd3575' },
+        })
+        .then(d => {
+          console.log(d.data);
+          setDataC(d.data);
+        });
     }
   };
 
