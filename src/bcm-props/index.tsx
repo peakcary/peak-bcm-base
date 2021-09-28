@@ -59,10 +59,10 @@ export const BcmProps: React.FC<TProps> = props => {
     setSelectValue(selectedValue);
   };
 
-  let title: string;
-  let label: string;
-  let labelC: string;
-  let v: string;
+  let title: string = '';
+  let label: string = '';
+  let labelC: string = '';
+  let v: string = '';
   if (ptype === 'user') {
     title = '用户属性';
     label = '用户属性:';
@@ -95,7 +95,7 @@ export const BcmProps: React.FC<TProps> = props => {
                 placeholder="请选择"
                 optionFilterProp="children"
                 onChange={onChange}
-                filterOption={(input, option) =>
+                filterOption={(input: any, option: any) =>
                   option.children.toLowerCase().indexOf(input.toLowerCase()) >=
                   0
                 }
@@ -121,7 +121,7 @@ export const BcmProps: React.FC<TProps> = props => {
                   placeholder="请选择"
                   optionFilterProp="children"
                   onChange={onChangeC}
-                  filterOption={(input, option) =>
+                  filterOption={(input: any, option: any) =>
                     option.children
                       .toLowerCase()
                       .indexOf(input.toLowerCase()) >= 0
