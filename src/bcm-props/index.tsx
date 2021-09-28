@@ -40,13 +40,10 @@ export const BcmProps: React.FC<TProps> = props => {
   };
 
   const onHandleConfirm = () => {
-    console.log(selectedValue);
     onConfirm(selectedValue);
   };
 
   const onChange = (value: string) => {
-    console.log(value);
-    let selectedValue = '';
     const { ptype } = props;
     if (ptype === 'user') {
       selectedValue = '${user.' + value + '}';
@@ -57,12 +54,9 @@ export const BcmProps: React.FC<TProps> = props => {
     if (ptype === 'product') {
       selectedValue = '${item.' + value + '}';
     }
-    selectedValue = selectedValue;
   };
 
   const onChangeC = (value: string) => {
-    console.log(value);
-    let selectedValue = '';
     const { ptype } = props;
     if (ptype === 'event') {
       selectedValue = '${event.' + value + '}';
@@ -70,8 +64,6 @@ export const BcmProps: React.FC<TProps> = props => {
     if (ptype === 'product') {
       selectedValue = '${item.' + value + '}';
     }
-    selectedValue = selectedValue;
-    // setSelectValue(selectedValue);
   };
 
   let title: string = '';
