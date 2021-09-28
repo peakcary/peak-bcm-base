@@ -5,11 +5,11 @@ import { Button, Select, Card } from 'antd';
 import './index.css';
 const { Option } = Select;
 type TProps = {
-  ptype?: string;
-  initialValue?: string;
-  readonly?: boolean;
-  onCancel?: () => void;
-  onConfirm?: (params: string) => void;
+  ptype: string;
+  initialValue: string;
+  readonly: boolean;
+  onCancel: () => void;
+  onConfirm: (params: string) => void;
 };
 
 export const BcmProps: React.FC<TProps> = props => {
@@ -39,7 +39,7 @@ export const BcmProps: React.FC<TProps> = props => {
   };
 
   const onHandleConfirm = () => {
-    onConfirm(selectedValue);
+    onConfirm(selectValue);
   };
 
   const onChange = (v: string) => {
