@@ -19,7 +19,6 @@ export default {
         'components/code-mirror',
         'components/input-verify',
         'components/select-search',
-        'components/iupload',
         'components/searchTree',
         'components/iSelectTree',
         'components/bcm-props',

@@ -3,7 +3,6 @@ import 'default-passive-events';
 export { default as HighlightCard } from './highlight-card';
 export { default as InputVerify } from './input-verify';
 export { default as SelectSearch } from './select-search';
-export { default as IUpload } from './i-upload';
 export { default as SearchTree } from './search-tree';
 export { default as ISelectTree } from './i-select-tree';
 export { default as CodeMirror } from './code-mirror';
